@@ -56,7 +56,7 @@
       .css('visibility', 'visible')
       .show();
 
-    $t.one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function () {
+    $t.one('animationend webkitAnimationEnd oAnimationEnd', function () {
         $t.removeClass('animated ' + effect);
         cb && cb();
     });

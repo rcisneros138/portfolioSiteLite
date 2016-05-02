@@ -12,6 +12,7 @@
     <!-- we use cdn but you can also include local files located in css directory-->
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/animate.min.css">
     <!-- Google fonts - Open Sans-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800,400italic">
     <!-- theme stylesheet-->
@@ -28,6 +29,7 @@
    
   </head>
   <body>
+      
     <section id="intro" class="text-intro no-padding-bottom">
       <div class="container">
         <div class="row">
@@ -41,9 +43,7 @@
                           <li>cyclist</li>
                           <li>whatevs</li>
                       </ul>
-                      
                   </h1>
-                  
               </div>
               <h1>living in Milwaukee</h1>
               
@@ -52,16 +52,23 @@
       </div>
     </section>
     <!-- portfolio-->
-    <section id="portfolio" class="no-padding-bottom"> 
+    <section id="portfolio" class="no-padding-bottom parallax-window" data-parallax="scroll" data-image-src="img/woodside.jpg"> 
       <div class="container">
         <div class="row">
+<!--
           <div class="col-md-12">
             <h2 class="heading">Here's what I have</h2>
             <p class="lead margin-bottom--big">You can make also image gallery with this section easily. </p>
           </div>
+-->
         </div>
       </div>
-      <div class="container-fluid">
+	<section>
+      <div class="container-fluid masonPortfolio" style="padding-bottom:200px">
+		
+			  <img class="tileItem" src="img/portfolio/a4-paper.jpg"/>
+		
+<!--
         <div class="row no-space">
           <div class="col-sm-4 col-md-3">
             <div class="box"><a href="img/portfolio/paper-presentation.jpg" title="" data-toggle="lightbox" data-gallery="portfolio" data-title="Name of the work 1" data-footer="Description of Project No.1"><img src="img/portfolio/paper-presentation.jpg" alt="" class="img-responsive"></a></div>
@@ -87,9 +94,12 @@
           <div class="col-sm-4 col-md-3">
             <div class="box"><a href="img/portfolio/ipad-air-2.jpg" title="" data-toggle="lightbox" data-gallery="portfolio" data-title="Name of the work 8" data-footer="Fifth abundantly made Give sixth hath. Cattle creature i be don't them."><img src="img/portfolio/ipad-air-2.jpg" alt="" class="img-responsive"></a></div>
           </div>
+-->
         </div>
       </div>
+	</section>
     </section>
+
     <section id="about" class="section">
       <div class="container">
         <div class="row">
@@ -105,34 +115,34 @@
               <div class="col-sm-6">
                 <p>Received overcame oh sensible so at an. Formed do change merely to county it. <strong>Am separate contempt</strong> domestic to to oh. On relation my so addition branched. Put hearing cottage she norland letters equally prepare too. Replied exposed savings he no viewing as up. Soon body add him hill. No father living really people estate if. Mistake do produce beloved demesne if am pursuit.</p>
                 <div class="skill-item">
-                  <div class="progress-title">PHP</div>
+                  <div class="progress-title">C#</div>
+					<div class= 'progress'>
+						<div id="bar1"></div>
+					</div>
+                </div>
+                <div class="skill-item">
+                  <div class="progress-title">Asp.Net</div>
+                  	<div class="progress">
+                    	<div id="bar2"></div>
+                  	</div>
+                </div>
+                <div class="skill-item">
+                  <div class="progress-title">Python</div>
                   <div class="progress">
-                    <div role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;" class="progress-bar progress-bar-skill1"><span class="sr-only">60</span></div>
-                  </div>
+                    	<div id="bar3"></div>
+                  	</div>
+                </div>
+                <div class="skill-item">
+                  <div class="progress-title">Django</div>
+                 <div class= 'progress'>
+						<div id="bar4"></div>
+					</div>
                 </div>
                 <div class="skill-item">
                   <div class="progress-title">Javascript</div>
-                  <div class="progress">
-                    <div role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;" class="progress-bar progress-bar-skill2"><span class="sr-only">70</span></div>
-                  </div>
-                </div>
-                <div class="skill-item">
-                  <div class="progress-title">HTML coding</div>
-                  <div class="progress">
-                    <div role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;" class="progress-bar progress-bar-skill3"><span class="sr-only">80</span></div>
-                  </div>
-                </div>
-                <div class="skill-item">
-                  <div class="progress-title">SEO</div>
-                  <div class="progress">
-                    <div role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%;" class="progress-bar progress-bar-skill4"><span class="sr-only">90</span></div>
-                  </div>
-                </div>
-                <div class="skill-item">
-                  <div class="progress-title">SEM</div>
-                  <div class="progress">
-                    <div role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;" class="progress-bar progress-bar-skill5"><span class="sr-only">70</span></div>
-                  </div>
+                 <div class= 'progress'>
+						<div id="bar5"></div>
+					</div>
                 </div>
               </div>
             </div>
@@ -141,6 +151,8 @@
         </div>
       </div>
     </section>
+	
+	
     <!--   *** CUSTOMERS ***-->
     <section id="customers" class="section background-gray-lightest">
       <div class="container">
@@ -243,6 +255,18 @@
     <script src="js/jquery.textillate.js"></script>
     <script src="js/jquery.fittext.js"></script>
     <script src="js/jquery.lettering.js"></script>
+	<script src="js/progressbar.min.js"></script>
+	<script src="js/debug.addIndicators.min.js"></script>
+	<script src="js/TweenMax.min.js"></script>
+	<script src="js/scrolleffects.js"></script>
+	<script src="js/ScrollMagic.js"></script>
+	<script src="js/parallax.min.js"></script>
+	<script src="js/masonry.pkgd.min.js"></script>
+	<script src="js/outlayer.js"></script>
+	<script src="js/imagesloaded.pkgd.min.js"></script>
+	<script src="https://npmcdn.com/masonry-layout@4.1/dist/masonry.pkgd.min.js"></script>
+	
+	
     
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID.-->
     <!---->
